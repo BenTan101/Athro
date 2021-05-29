@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/login_navigation"
+    app:startDestination="@id/nav_signin">
+
+    <fragment
+        android:id="@+id/nav_signin"
+        android:name="com.example.athro.ui.login.signin.SigninFragment"
+        android:label="@string/app_name"
+        tools:layout="@layout/fragment_signin">
+        <action
+            android:id="@+id/action_signinFragment_to_signupFragment"
+            app:destination="@id/nav_signup"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_signup"
+        android:name="com.example.athro.ui.login.signup.SignupFragment"
+        android:label="@string/sign_up"
+        tools:layout="@layout/fragment_signup">
+        <action
+            android:id="@+id/action_signupFragment_to_signinFragment"
+            app:destination="@id/nav_signin" />
+    </fragment>
+</navigation>

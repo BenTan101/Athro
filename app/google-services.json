@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "1082526447367",
+    "project_id": "athro-5457f",
+    "storage_bucket": "athro-5457f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1082526447367:android:eea836169ac7f8225e37a2",
+        "android_client_info": {
+          "package_name": "com.example.athro"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1082526447367-m50fhlekvv7l9c86dtpbbu2o33gr5urr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.athro",
+            "certificate_hash": "69622d3d4611e85729d8fb63812fd1e3d5903e5f"
+          }
+        },
+        {
+          "client_id": "1082526447367-c45k7oidq4olbs9mdpk6s37ojp3et0b6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC7fMf0ATZ4crm05-F5qq91EngFiFsViMo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1082526447367-c45k7oidq4olbs9mdpk6s37ojp3et0b6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

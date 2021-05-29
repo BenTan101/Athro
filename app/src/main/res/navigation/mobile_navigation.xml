@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_profile">
+
+    <fragment
+        android:id="@+id/nav_profile"
+        android:name="com.example.athro.ui.main.profile.ProfileFragment"
+        android:label="@string/menu_profile"
+        tools:layout="@layout/fragment_profile" />
+
+    <fragment
+        android:id="@+id/nav_tutors"
+        android:name="com.example.athro.ui.main.tutors.TutorsFragment"
+        android:label="@string/menu_tutors"
+        tools:layout="@layout/fragment_tutors" />
+
+    <fragment
+        android:id="@+id/nav_tutees"
+        android:name="com.example.athro.ui.main.tutees.TuteesFragment"
+        android:label="@string/menu_tutees"
+        tools:layout="@layout/fragment_tutees" />
+
+    <fragment
+        android:id="@+id/nav_log"
+        android:name="com.example.athro.ui.main.log.LogFragment"
+        android:label="@string/menu_log"
+        tools:layout="@layout/fragment_log" />
+
+    <fragment
+        android:id="@+id/nav_history"
+        android:name="com.example.athro.ui.main.history.HistoryFragment"
+        android:label="@string/menu_history"
+        tools:layout="@layout/fragment_history" />
+</navigation>

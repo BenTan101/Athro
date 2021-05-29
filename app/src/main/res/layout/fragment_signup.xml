@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    tools:context=".ui.login.signin.SigninActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/activity_margin"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/bottom_padding">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/activity_margin"
+            android:paddingTop="48dp"
+            android:textColor="@color/white"
+            android:textSize="48sp"
+            android:textStyle="bold" />
+
+        <TextView
+            style="@style/ColorButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/activity_margin"
+            android:paddingBottom="64dp"
+            android:text="@string/create_account"
+            android:textColor="@color/white"
+            android:textSize="34sp" />
+
+        <EditText
+            android:id="@+id/name"
+            style="@style/EditText"
+            android:hint="@string/prompt_name" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginTop="@dimen/activity_margin"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="4dp"
+                android:text="@string/year"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+            <Spinner
+                android:id="@+id/year_spinner"
+                style="@style/Spinner"
+                android:paddingTop="2dp"
+                android:tooltipText="Year" />
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/email"
+            style="@style/EditText"
+            android:autofillHints="@string/prompt_email"
+            android:hint="@string/prompt_email"
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            android:id="@+id/password"
+            style="@style/EditText"
+            android:hint="@string/prompt_password"
+            android:imeActionLabel="@string/sign_in"
+            android:imeOptions="actionDone"
+            android:inputType="textPassword" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+
+            <CheckBox
+                android:id="@+id/user"
+                style="@style/Checkbox"
+                android:layout_marginEnd="@dimen/activity_margin"
+                android:text="@string/tutor" />
+
+            <CheckBox
+                android:id="@+id/tutee"
+                style="@style/Checkbox"
+                android:text="@string/tutee" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/sign_up"
+            style="@style/ColorButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:backgroundTint="@color/light_blue"
+            android:text="@string/sign_up" />
+    </LinearLayout>
+</ScrollView>
